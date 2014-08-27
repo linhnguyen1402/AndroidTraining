@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txttemprature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="100C"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Country: " />
+
+        <TextView
+            android:id="@+id/txtcountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/txtCountry"
+            android:hint="country" />
+
+        <TextView
+            android:id="@+id/txtCurrent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCountry"
+            android:layout_marginLeft="10dp"
+            android:text="Current: " />
+
+        <TextView
+            android:id="@+id/txtcurrent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCountry"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/txtCurrent"
+            android:hint="current" />
+
+        <TextView
+            android:id="@+id/txtHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCurrent"
+            android:layout_marginLeft="10dp"
+            android:text="Humidity: " />
+
+        <TextView
+            android:id="@+id/txthumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/txtcurrent"
+            android:layout_below="@id/txtCurrent"
+            android:layout_toRightOf="@id/txtHumidity"
+            android:hint="humidity" />
+    </RelativeLayout>
+
+</LinearLayout>
